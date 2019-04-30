@@ -224,7 +224,9 @@
               echo "The number used is: $number<br>";
               echo "The number is not in the array given";
             }
+            echo "</p>";
             echo '<br><h5 class="card-title">has_exclusion_of($string,$array)</h5>';
+            echo "<p>";
             if (has_inclusion_of($string,$array)) {
               echo "The string used is: '$string'<br>";
               echo "The string is in the array given";
@@ -251,7 +253,9 @@
               echo "The number used is: $newNumber<br>";
               echo "The number is in the array given";
             }
+            echo "</p>";
             echo '<br><h5 class="card-title">has_exclusion_of($newString,$array)</h5>';
+            echo "<p>";
             if (has_exclusion_of($newString,$array)) {
               echo "The string used is: '$newString'<br>";
               echo "The string is not in the array given";
@@ -308,10 +312,8 @@
       <div class="card mr-3 mb-3 w-auto">
         <h5 class="card-header">Function 16</h5>
         <div class="card-body">
-          <h5 class="card-title">display_errors($errors)</h5>
-          <p class="card-text">
-          <?= display_errors($errors); ?>
-          </p>
+          <h5 class="card-title">display_errors($errors)</h5>          
+          <?= display_errors($errors); ?>          
         </div>
       </div>
 
